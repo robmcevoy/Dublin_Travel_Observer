@@ -1,6 +1,6 @@
 Dublin_Travel_Observer
 ======================
-Design
+#### Design
 
 For this assignment I have applied the observer pattern to an aspect of my Final Year Project. The aim of the project is to produce a Real-Time Data Visualisation and Journey Planning Android Application. This assignment focuses on the real-time passenger information (RTPI) for Dublin Bus, Bus Eireann, Luas and Irish Rail. This information is available through a Rest api. In order to get the most update to date information my application will need to query this api frequently and update any relevant visualisations. This is where I have applied the Observer Pattern. 
 
@@ -14,4 +14,6 @@ This assignment is implemented in Java as it is the language used to develop And
 
 In the main method four hardcoded Stops are created as no user interface is implemented to allow a user to configure stops. eg: 
 
+```
 Stop DublinBusStop = new Stop("1686", "bac", "Castleknock"); 
+```
