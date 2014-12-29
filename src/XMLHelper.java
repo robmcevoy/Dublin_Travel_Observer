@@ -21,9 +21,9 @@ public class XMLHelper {
 			Document doc = saxBuilder.build(new StringReader(data));
 			Element rootNode = doc.getRootElement();
 			Namespace namespace = rootNode.getNamespace();
-		    List list = rootNode.getChildren("objStationData", namespace);
-		    Element node = (Element)list.get(0);
-		    dueIn = node.getChildText("Duein", namespace);
+			List list = rootNode.getChildren("objStationData", namespace);
+		    	Element node = (Element)list.get(0);
+		    	dueIn = node.getChildText("Duein", namespace);
 		  
 		} catch (JDOMException e) {
 			System.out.println(e.toString());
